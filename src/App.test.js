@@ -1,8 +1,23 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import $ from 'jquery'
+  
+var btc = document.getElementById("bitcoin");
+var ltc = document.getElementById("litecoin");
+var eth = document.getElementById("ethereum");
+var doge = document.getElementById("dogecoin");
+  
+var liveprice = {
+  "async": true,
+  "scroosDomain": true,
+  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Clitecoin%2Cethereum%2Cdogecoin&vs_currencies=usd&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true&include_last_updated_at=true",
+  "method": "GET",
+  "headers": {}
+}
+ $.ajax(liveprice).done(function (response){
+   btc.innerHTML = response.bitcoin.usd;
+  ltc.innerHTML = response.litecoin.usd;
+  eth.innerHTML = response.ethereum.usd;
+  doge.innerHTML = response.dogecoin.usd;
+  return liveprice
+ });
+  
+  
