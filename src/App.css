@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align:justify; 
   width: 400px;
   height: 250px;
@@ -41,3 +41,128 @@
     transform: rotate(360deg);
   }
 }
+ */
+
+html {
+  height: 100%;
+  width: 100%;
+}
+.container
+{
+position:absolute;
+background-color:#e4edfb;
+height:1196px;
+width:1592px;
+}
+.mainpage
+{
+position:relative;
+top: 137px;
+left: 123px;
+background-color:#f8fafc;
+height:922px;
+width:1342px;
+border-radius:25px;
+}
+#sidebar
+{
+position:absolute;
+background-color:#612f7c;
+height:854px;
+width:257px;
+}
+#dashboard
+{
+position:relative;
+left: 257px;
+background-color:grey;
+height:102px;
+width:1086px;
+border-top-right-radius: 25px;
+}
+#duration
+{
+position:relative;
+left: 257px;
+/* top: 102px; */
+background-color: yellow;
+height:50px;
+width:562px;
+}
+/* #credits
+{
+position:relative;
+top: 854px;
+left: 0; 
+background-color:#4c1439;
+height:36px;
+width:257px;
+} */
+#c1
+{
+position:absolute;
+top: 200px;
+left: 300px;
+background-color:grey;
+height:124px;
+width:145px;
+border-radius:15px;
+}
+#c2
+{
+position:absolute;
+top: 200px;
+left: 480px;
+background-color:grey;
+height:124px;
+width:146px;
+border-radius:15px;
+}
+#c3
+{
+position:absolute;
+top: 200px;
+left: 660px;
+background-color:grey;
+height:124px;
+width:146px;
+border-radius:15px;
+}
+#c4
+{
+position:absolute;
+top: 200px;
+left: 840px;
+background-color:grey;
+height:124px;
+width:146px;
+border-radius:15px;
+}
+#c5
+{
+position:absolute;
+top: 200px;
+left: 1020px;
+background-color:grey;
+height:124px;
+width:146px;
+border-radius:15px;
+}
+#graphs
+{
+position:relative;
+top: 230px;
+left: 257px;
+background-color:grey;
+height:540px;
+width:1086px;
+border-bottom-right-radius: 25px;
+}
+
+
+
+
+
+
+
+
